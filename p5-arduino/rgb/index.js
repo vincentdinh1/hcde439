@@ -31,7 +31,7 @@ function draw() {
   let rgbArray = str.trim().split(","); // Trim whitespace and split on commas
 
   // Convert each element to a number, map it to the RGB range, and round to nearest integer
-  const red = round(map(Number(rgbArray[0]), 512, 1023, 0, 255));
+  const red = round(map(Number(rgbArray[0]), 512, 1023, 255, 0));
   const green = round(map(Number(rgbArray[1]), 512, 1023, 0, 255));
   const blue = round(map(Number(rgbArray[2]), 512, 1023, 0, 255));
 
